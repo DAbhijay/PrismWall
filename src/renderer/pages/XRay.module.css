@@ -1,0 +1,142 @@
+.page { max-width: 600px; }
+
+.experimentalBanner {
+  font-size: 12px;
+  color: var(--amber);
+  background: rgba(224, 168, 85, 0.1);
+  border: 1px solid rgba(224, 168, 85, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 7px 12px;
+  margin-bottom: 20px;
+}
+
+.headerRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.heading {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.sub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.toggleBtn {
+  font-size: 12px;
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.toggleBtn.on {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.composer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.composer.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.layerSlot { flex: 1; }
+
+.layerLabel {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.layerBox {
+  height: 110px;
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.layerBox:hover { border-color: var(--accent); }
+.layerBox.filled { border-style: solid; border-color: var(--accent); }
+
+.layerThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.layerEmpty {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.layerFile {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blendIcon {
+  font-size: 20px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  padding-top: 24px;
+}
+
+.opacityRow {
+  margin-bottom: 20px;
+}
+
+.opacityRow.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.opacityLabel {
+  display: block;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.slider {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}

@@ -1,0 +1,60 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-primary:      #1e1e2e;
+  --bg-secondary:    #252535;
+  --bg-elevated:     #2d2d42;
+  --border:          #3a3a55;
+  --border-subtle:   #2d2d42;
+
+  --text-primary:    #e0e0f0;
+  --text-secondary:  #9898b8;
+  --text-muted:      #5a5a80;
+
+  --accent:          #7f77dd;
+  --accent-dim:      #2d2850;
+  --accent-hover:    #9990e8;
+
+  --green:           #5dcaa5;
+  --red:             #e05a5a;
+  --amber:           #e0a855;
+
+  --radius-sm:       6px;
+  --radius-md:       10px;
+  --radius-lg:       14px;
+
+  --sidebar-width:   190px;
+  --topbar-height:   52px;
+  --statusbar-height: 36px;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  user-select: none; /* desktop app — no text selection by default */
+}
+
+/* Scrollable areas can opt back in */
+.scrollable {
+  overflow-y: auto;
+  user-select: text;
+}
+
+/* Utility classes */
+.text-secondary { color: var(--text-secondary); }
+.text-muted     { color: var(--text-muted); }
+.text-accent    { color: var(--accent); }
+.text-green     { color: var(--green); }
+.text-red       { color: var(--red); }
